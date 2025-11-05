@@ -118,7 +118,7 @@ reproducible using the provided code.
 
 ## Citation
 
-If you use this code in your research, please cite:
+If you use this code in your research (if it is accepted for publishing), please cite:
 ```bibtex
 @article{bednar2025usle,
   author = {Bednář, M. and Šarapatka, B.},
@@ -141,7 +141,7 @@ The manuscript and associated data are licensed under CC-BY-4.0.
 **Corresponding Author:** Bednář, M.  
 **Institution:** Department of Ecology and Environmental Sciences, 
                 Palacký University in Olomouc, Czech Republic  
-**Email:** [your.email@upol.cz]
+**Email:** [marek.bednar@upol.cz]
 
 ## Acknowledgments
 
