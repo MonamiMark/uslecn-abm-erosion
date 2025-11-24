@@ -6,8 +6,7 @@
 This repository contains code and materials to reproduce the analyses presented in:
 
 **Bednář, M., Šarapatka, B.** (2025). Accounting for Crop Pattern Heterogeneity 
-in LS Factor Estimation: An Agent-Based Comparison of Classical USLE and Modified 
-USLE–CN Approaches. *Catena* [in review/accepted/published - podle stavu].
+in LS Factor Estimation: Modelling the effect of crop pattern heterogeneity on LS-factor estimation and strip cropping efficiency: an agent-based comparison of classical USLE and modified USLE–CN approaches *International Soil and Water Conservation Research* [in review].
 
 ## Abstract
 
