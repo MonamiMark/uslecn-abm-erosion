@@ -157,3 +157,5 @@ This work was supported by the Technology Agency of the Czech Republic (TAČR):
 ```
 numpy>=1.20.0
 matplotlib>=3.3.0
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17531041.svg)](https://doi.org/10.5281/zenodo.17531041)
