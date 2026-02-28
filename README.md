@@ -1,21 +1,15 @@
 # uslecn-abm-erosion
-# Accounting for Crop Pattern Heterogeneity in LS Factor Estimation
+# Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes
 
 ## Overview
 
 This repository contains code and materials to reproduce the analyses presented in:
 
-**Bednář, M., Šarapatka, B.** (2025). Accounting for Crop Pattern Heterogeneity 
-in LS Factor Estimation: Modelling the effect of crop pattern heterogeneity on LS-factor estimation and strip cropping efficiency: an agent-based comparison of classical USLE and modified USLE–CN approaches *International Soil and Water Conservation Research* [in review].
+**Bednář, M., Šarapatka, B.** (2026). Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes *Environmental Modelling & Software* [in review].
 
 ## Abstract
 
-Classical USLE-based LS factor estimation assumes homogeneous land cover within 
-the contributing area. This study introduces a modified USLE–CN approach that 
-adjusts flow accumulation using Curve Number-based runoff ratios, thereby 
-embedding land-cover heterogeneity directly into LS factor calculation. Both 
-methods were implemented within an agent-based modelling (ABM) framework to 
-enable controlled comparison across thousands of strip-cropping scenarios.
+Classical LS-factor estimation in USLE-type models often fail in heterogeneous agricultural landscapes because the topographic logic assumes uniform runoff generation across contributing areas. We propose LS_CN, a data-light modification that weights flow accumulation by Curve Number (CN)-derived runoff ratios to account for land-use-driven runoff variability without additional calibration. The method was implemented in an agent-based framework and tested on over 20,000 synthetic and real-world scenarios with contrasting crop configurations and event rainfall depths. Results show that classical LS systematically misestimates effective contributing areas, while LS_CN reduces this 'homogeneity bias' and leads to 15–30% lower, yet more process-consistent, soil loss predictions. We identified a critical sensitivity window at rainfall depths of 40–70 mm where CN-weighting most significantly alters erosion risk patterns. LS_CN provides a practical, computationally efficient tool for evaluating nature-based solutions (e.g., strip cropping, buffer zones) where the spatial configuration of runoff pathways drives erosion risk.
 
 ## Repository Contents
 ```
@@ -123,8 +117,8 @@ If you use this code in your research (if it is accepted for publishing), please
   author = {Bednář, M. and Šarapatka, B.},
   title = {Accounting for Crop Pattern Heterogeneity in LS Factor Estimation: 
            An Agent-Based Comparison of Classical USLE and Modified USLE–CN Approaches},
-  journal = {Catena},
-  year = {2025},
+  journal = {Environmental Modelling & Software},
+  year = {2026},
   note = {in review}
 }
 ```
