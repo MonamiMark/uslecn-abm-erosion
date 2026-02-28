@@ -115,8 +115,7 @@ If you use this code in your research (if it is accepted for publishing), please
 ```bibtex
 @article{bednar2025usle,
   author = {Bednář, M. and Šarapatka, B.},
-  title = {Accounting for Crop Pattern Heterogeneity in LS Factor Estimation: 
-           An Agent-Based Comparison of Classical USLE and Modified USLE–CN Approaches},
+  title = {Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes},
   journal = {Environmental Modelling & Software},
   year = {2026},
   note = {in review}
