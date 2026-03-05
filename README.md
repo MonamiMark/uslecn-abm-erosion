@@ -5,7 +5,7 @@
 
 This repository contains code and materials to reproduce the analyses presented in:
 
-**Bednář, M., Šarapatka, B.** (2026). Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes *Environmental Modelling & Software* [in review].
+**Bednář, M., Šarapatka, B.** (2026). Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes *Ecological Informatics* [in review].
 
 ## Abstract
 
