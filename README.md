@@ -1,11 +1,11 @@
 # uslecn-abm-erosion
-# Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes
+# A runoff-weighted topographic factor for soil erosion modelling in heterogeneous landscapes: correcting land-cover-driven flow accumulation bias
 
 ## Overview
 
 This repository contains code and materials to reproduce the analyses presented in:
 
-**Bednář, M., Šarapatka, B.** (2026). Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes *Ecological Informatics* [in review].
+**Bednář, M., Šarapatka, B.** (2026). A runoff-weighted topographic factor for soil erosion modelling in heterogeneous landscapes: correcting land-cover-driven flow accumulation bias *Ecological Informatics* [in review].
 
 ## Abstract
 
