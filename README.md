@@ -1,11 +1,11 @@
 # uslecn-abm-erosion
-# A runoff-weighted topographic factor for soil erosion modelling in heterogeneous landscapes: correcting land-cover-driven flow accumulation bias
+# Landscape heterogeneity controls runoff connectivity and erosion hotspot identification: a runoff-weighted modification of topographic factors in strip-cropped agricultural fields
 
 ## Overview
 
 This repository contains code and materials to reproduce the analyses presented in:
 
-**Bednář, M., Šarapatka, B.** (2026). A runoff-weighted topographic factor for soil erosion modelling in heterogeneous landscapes: correcting land-cover-driven flow accumulation bias *Ecological Informatics* [in review].
+**Bednář, M., Šarapatka, B.** (2026). Landscape heterogeneity controls runoff connectivity and erosion hotspot identification: a runoff-weighted modification of topographic factors in strip-cropped agricultural fields *Landscape Ecology* [in review].
 
 ## Abstract
 
@@ -116,7 +116,7 @@ If you use this code in your research (if it is accepted for publishing), please
 @article{bednar2025usle,
   author = {Bednář, M. and Šarapatka, B.},
   title = {Reducing homogeneity bias in LS topographic factors: LS_CN: a parsimonious modification for heterogeneous agricultural landscapes},
-  journal = {Environmental Modelling & Software},
+  journal = {Landscape Ecology},
   year = {2026},
   note = {in review}
 }
