@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.2.1 — 2026-11-23
+
+Fixes the byte fidelity of the archive.
+
+v1.2.0 was committed with git's default end-of-line conversion active, which rewrote
+CRLF to LF for the data files. The archive therefore stored `data/outputs/derived/pairs.csv`
+as 3,084,617 bytes instead of 3,093,348, and the SHA-256 quoted in `README.md` did not
+match the file a user would download. The content was unaffected — the file is identical
+after normalising line endings — but the verification step in the README could not be
+reproduced.
+
+This version adds `.gitattributes` with `* -text`, so git stores files verbatim, and
+re-commits the data files in their original byte form. The checksum in `README.md` now
+matches the archive. No code, data or metadata changed.
+
 ## 1.2.0 — 2026-11-23
 
 This version makes the archive reproducible: it adds the complete simulation outputs and

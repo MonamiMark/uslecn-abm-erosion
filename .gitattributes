@@ -1,0 +1,7 @@
+# Archival snapshot: store every file exactly as produced.
+#
+# Git's default end-of-line conversion rewrote CRLF to LF on commit, which changed
+# the archived bytes of the data files: data/outputs/derived/pairs.csv lost 8,731
+# bytes and the checksum stated in README.md no longer matched the archive.
+# With `-text` git stores files verbatim, on every platform.
+* -text
