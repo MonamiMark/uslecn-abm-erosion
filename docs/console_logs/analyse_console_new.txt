@@ -1,0 +1,155 @@
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+
+================ POKRYTI SOUBORU ================
+          experiment              parent pairs max_dev
+            eKPntTwo            eKPntTwo   270       0
+     eKPntTwo (copy)     eKPntTwo (copy)   270       0
+         eKPnt_sl108               eKPnt   270       0
+         eKPnt_sl144               eKPnt   270       0
+         eKPnt_sl180               eKPnt   270       0
+          eKPnt_sl36               eKPnt   270       0
+          eKPnt_sl72               eKPnt   270       0
+         ePKnt_sl108               ePKnt   270       0
+         ePKnt_sl144               ePKnt   270       0
+         ePKnt_sl180               ePKnt   270       0
+          ePKnt_sl36               ePKnt   270       0
+          ePKnt_sl72               ePKnt   270       0
+         p288k_sl144               p288k   270       0
+          p288k_sl36               p288k   270       0
+          p288k_sl72               p288k   270       0
+         p288p_sl144               p288p   270       0
+          p288p_sl36               p288p   270       0
+          p288p_sl72               p288p   270       0
+       p400s1k_sl100             p400s1k   270       0
+       p400s1k_sl200             p400s1k   270       0
+        p400s1k_sl25             p400s1k   270       0
+        p400s1k_sl50             p400s1k   270       0
+       p400s1p_sl100             p400s1p   270       0
+       p400s1p_sl200             p400s1p   270       0
+        p400s1p_sl25             p400s1p   270       0
+        p400s1p_sl50             p400s1p   270       0
+         p500k_sl125               p500k   270       0
+          p500k_sl25               p500k   270       0
+          p500k_sl50               p500k   270       0
+         p500p_sl125               p500p   270       0
+          p500p_sl25               p500p   270       0
+          p500p_sl50               p500p   270       0
+ ex_pasy_obracene_25 ex_pasy_obracene_25    90       0
+
+max_dev = nejvetsi relativni odchylka zastoupeni hladiny od rovnomerneho (0 = vyvazene,
+1 = vsechny pary v jedne hladine). Hodnoty > 0.35 znamenaji nedokonceny (zkresleny) soubor.
+
+================ CELKEM (bez 10 mm) ================
+paru: 7650  (z 8730 )
+mean A_LS = 16.697   mean A_CN = 12.114   (pomer -27.4 %)
+pct: mean -23.8 %  median -18.3 %  sd 21.2  IQR -40.5 az -4.9
+dA:  mean -4.583  median -2.715 t/ha/rok
+podil paru s A_CN > A_LS: 4.2 %
+sd(A_CN)/sd(A_LS) = 0.694  (mene variabilni = < 1)
+
+================ 10 mm (degenerovane, mimo statistiky) ================
+paru: 1080   A_CN == 0 ve vsech: TRUE 
+Ia = 0.2S > P, takze SCS-CN nedava zadny odtok; divergence je -100 % konstrukci.
+
+================ PO EXPERIMENTECH (bez 10 mm) ================
+              parent soubory    n  A_LS  A_CN mean_pct med_pct sd_pct pozitivni
+               eKPnt       5  900 14.76 12.39    -14.6    -9.0   16.1      10.3
+            eKPntTwo       1  180 23.80 22.71     -4.8    -3.7    4.3       0.0
+     eKPntTwo (copy)       1  180  5.80  4.17    -25.6    -5.8   36.7       9.4
+               ePKnt       5  900 15.16 12.42    -16.8   -11.5   15.3       3.4
+ ex_pasy_obracene_25       1   90 19.51  9.32    -51.4   -51.9    5.3       0.0
+               p288k       3  810 13.68 12.59     -7.1    -2.3   13.0      13.6
+               p288p       3  810 15.35 13.60    -10.5    -5.1   13.2       0.7
+             p400s1k       4 1080 18.33 11.83    -31.8   -30.5   20.3       2.8
+             p400s1p       4 1080 18.00 11.55    -31.5   -31.0   20.3       3.3
+               p500k       3  810 18.90 11.07    -37.9   -35.3   18.3       0.0
+               p500p       3  810 19.33 11.40    -37.2   -36.3   17.1       0.0
+
+================ PO SRAZkach (bez 10 mm) ================
+ srazky-mm    n nulovych_A_CN  A_LS mean_pct med_pct
+        10 1080          1080 14.93   -100.0  -100.0
+        30 2880             0 16.45    -31.4   -31.1
+        50 1080             0 14.93     -7.5    -5.6
+        60 1800             0 17.36    -22.5   -18.2
+       120 1800             0 17.36    -21.2   -16.7
+
+--- soil ---
+      lvl    n  A_LS mean_pct med_pct
+ kambizem 3780 14.86    -18.0   -12.4
+ ─Źernozem 3780 18.46    -28.9   -26.9
+
+--- morphology ---
+     lvl    n  A_LS mean_pct med_pct
+ concave 2550 12.69    -21.9   -16.7
+  convex 2550 22.16    -26.6   -20.2
+   plane 2550 15.23    -22.9   -18.4
+
+--- flow_direction ---
+        lvl    n  A_LS mean_pct med_pct
+ convergent 2550 18.00    -24.0   -18.7
+  divergent 2550 15.07    -23.7   -18.0
+   parallel 2550 17.03    -23.7   -18.2
+
+--- stripe-length ---
+ lvl    n  A_LS mean_pct med_pct
+  25 1170 21.86    -53.2   -51.3
+  36  900 14.52    -11.7    -5.6
+  50 1080 18.63    -36.5   -33.3
+  72  900 14.52    -10.6    -4.6
+ 100  540 16.75    -23.2   -19.9
+ 108  360 16.09    -24.8   -21.0
+ 125  540 16.65    -22.8   -16.7
+ 144  900 14.52     -8.6    -2.3
+ 180  360 15.16    -16.0   -12.5
+ 200  540 15.21    -13.7   -10.3
+
+--- division_angle ---
+ lvl    n  A_LS mean_pct med_pct
+   0 1521 15.88    -16.8   -11.8
+  10    9 18.44    -47.0   -46.9
+  20 1521 16.46    -22.1   -16.8
+  30    9 19.88    -53.3   -52.5
+  40    9 20.26    -54.4   -53.5
+  50 1521 16.76    -26.1   -20.6
+  60    9 19.98    -53.7   -52.9
+  70 1521 16.54    -25.2   -19.6
+  80    9 19.05    -48.9   -47.6
+  90 1521 17.76    -27.9   -21.2
+
+================ PODIL ROZPTYLU divergence (bez 10 mm) ================
+srazky-mm        R2 = 0.0186
+soil             R2 = 0.0674
+morphology       R2 = 0.0093
+flow_direction   R2 = 0.0000
+stripe-length    R2 = 0.1833
+division_angle   R2 = 0.0291
+crop_combo       R2 = 0.0010
+srazky*puda      R2 = 0.1320
+srazky*puda+topo R2 = 0.1414   (prirustek topografie = +0.00939)
+A_LS ~ srazky*puda R2 = 0.0822   (kontrola: absolutni A_LS)
+A_LS ~ +topo     R2 = 0.4998   (prirustek topografie = +0.4176)
+
+================ ROZDELENI pct (5% pasma, bez 10 mm) ================
+        pas Freq podil
+ (-Inf,-60]  450  5.88
+  (-60,-55]  224  2.93
+  (-55,-50]  463  6.05
+  (-50,-45]  418  5.46
+  (-45,-40]  388  5.07
+  (-40,-35]  333  4.35
+  (-35,-30]  558  7.29
+  (-30,-25]  272  3.56
+  (-25,-20]  448  5.86
+  (-20,-15]  672  8.78
+  (-15,-10]  652  8.52
+   (-10,-5]  818 10.69
+     (-5,0] 1631 21.32
+      (0,5]  270  3.53
+     (5,10]   37  0.48
+    (10,15]    9  0.12
+    (15,20]    7  0.09
+
+pct == 0 presne: 0.0 %   |pct| < 0.01: 0.1 %
+
+Ulozeno: D:/projekty/metodika/clanek/netlogo/headless_runs/out/analysis/pairs.csv 

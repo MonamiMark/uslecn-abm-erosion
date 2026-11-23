@@ -1,0 +1,45 @@
+{
+  "title": "uslecn-abm-erosion v1.2.0 \u2014 NetLogo implementation of a runoff-weighted LS factor (LS_CN), paired simulation outputs and R analysis code",
+  "upload_type": "software",
+  "description": "<p><strong>NetLogo 7.0.2 implementation of LS_CN</strong>, a topographic index in which SCS-CN event runoff ratios weight the specific contributing area before the RUSLE slope-length exponent, together with the complete paired simulation outputs and the R analysis code behind the manuscript by Bedn\u00e1\u0159 and \u0160arapatka on a runoff-weighted contributing-area index for analysing landscape-configuration effects on erosion potential in strip-cropped agriculture.</p><p><strong>What this archive contains</strong></p><ul><li><code>netlogo/usle_abm_model_LE_LFIX.nlogo</code> \u2014 the model version that produced every run in this archive. It contains the corrected flow-accumulation expression: the contributing area is raised to the slope-length exponent as a whole, and the runoff ratio multiplies the contributing area rather than the slope length. The SCS-CN denominator is <code>P + 0.8 S</code>, consistent with <code>Ia = 0.2 S</code>.</li><li><code>data/outputs/raw/</code> \u2014 33 BehaviorSpace output tables (CP1250, seven-line header) covering 14 experiment families.</li><li><code>data/outputs/derived/pairs.csv</code> \u2014 8,730 paired scenarios, each giving the classical-LS and the LS_CN result for the same factor combination, with all design factors.</li><li><code>data/outputs/derived/coverage.csv</code> \u2014 per-file completeness check; the maximum imbalance statistic is 0 for all 33 files.</li><li><code>analysis/R/</code> \u2014 the scripts that build the paired table and reproduce Tables 1 and 2 of the manuscript.</li><li><code>data/landuse/</code>, <code>data/realblocks/</code>, <code>data/virtual_blocks/</code> \u2014 the C-factor strip patterns, the real-DEM-derived terrain templates and the synthetic terrain blocks.</li><li><code>docs/</code> \u2014 ODD protocol, two technical supplements and the console logs of the analysis.</li></ul><p><strong>Simulation design</strong>: 120 \u00d7 120 cells of 5 \u00d7 5 m, multiple-flow-direction routing, full factorial over crop order, division type, strip length, strip angle, rainfall depth, terrain morphology, flow pattern and soil region. Each scenario was run twice \u2014 once with classical LS and once with LS_CN \u2014 with every other input identical.</p><p><strong>Verified reproduction</strong>: the pairing script regenerates <code>pairs.csv</code> byte-identically from <code>data/outputs/raw/</code>, and the two table scripts reproduce the published coefficients exactly (Table 1: n = 7,200, R2 = 0.262, AIC = 42,351.0; Table 2: n = 14,400 rows, deviance explained 57.8 %, AIC = 78,631.8, method coefficient -4.674).</p><p><strong>Changes in v1.2.0</strong>: corrected L-factor exponentiation in the model (the previous expression applied the exponent to the denominator only, so L grew linearly with flow accumulation) and a consistent SCS-CN denominator; the complete paired output tables and the analysis code are added; the two terrain rasters that were truncated in earlier versions are restored and the missing <code>ce4.asc</code> is added; claims in the README that were not supported by the archived data have been removed.</p><p><strong>Scope and limitations</strong>: these are model outputs only. No measured runoff, soil loss or sediment yield is included, no observational validation is claimed, and the model performs no sediment routing or deposition. Real-DEM scenarios use DMR 4G derivatives as terrain templates and are not field plots. All comparisons are model-to-model, under a defined homogeneous counterfactual.</p><p><strong>Licensing</strong>: code under MIT (see LICENSE); data and documentation under CC BY 4.0.</p><p><strong>Requirements</strong>: NetLogo 7.0.2 for the model, R 4.4 with <code>dplyr</code> and <code>mgcv</code> for the analysis, Python 3.8+ for the terrain and land-use generators.</p>",
+  "creators": [
+    {
+      "name": "Bedn\u00e1\u0159, Marek",
+      "affiliation": "Department of Ecology and Environmental Sciences, Palack\u00fd University in Olomouc, Czech Republic",
+      "orcid": "0000-0002-8832-0919"
+    },
+    {
+      "name": "\u0160arapatka, Bo\u0159ivoj",
+      "affiliation": "Department of Ecology and Environmental Sciences, Palack\u00fd University in Olomouc, Czech Republic"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "version": "1.2.0",
+  "keywords": [
+    "soil erosion modelling",
+    "topographic factor",
+    "LS factor",
+    "RUSLE",
+    "SCS curve number",
+    "runoff connectivity",
+    "flow accumulation",
+    "multiple flow direction",
+    "landscape configuration",
+    "strip cropping",
+    "agent-based model",
+    "NetLogo",
+    "full-factorial simulation",
+    "model-to-model comparison"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/MonamiMark/uslecn-abm-erosion",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Only the input/output path block differs between the R scripts archived here and the versions used for the manuscript; the analysis code itself is unchanged. The raw BehaviorSpace tables are stored exactly as exported and are CP1250 encoded."
+}
