@@ -1,19 +1,29 @@
 # Changelog
 
+## 1.2.2 — 2026-11-23
+
+Completes the byte fidelity fix; corrects an ineffective step in 1.2.1.
+
+v1.2.1 added `.gitattributes` with `* -text` but did not re-hash the data files. Git had
+already staged them, and because their recorded stat data had not changed it never applied
+the new attribute: the archive published from v1.2.1 still stored
+`data/outputs/derived/pairs.csv` as 3,084,617 bytes (LF), while the working tree held
+3,093,348 bytes (CRLF). `git add --renormalize .` was required to force the conversion to
+be undone.
+
+This release re-normalises the data files, so the checksum quoted in `README.md` now
+matches the archive. No code, data values or metadata changed.
+
+Note on the version history: the records for 1.2.0 and 1.2.1 are published and cannot be
+altered. The 1.2.1 record was also published under the version label "1.2.0" because
+`.zenodo.json` had not been bumped; its metadata label has since been corrected to 1.2.1,
+but its archived files still carry LF line endings. Use 1.2.2.
+
 ## 1.2.1 — 2026-11-23
 
-Fixes the byte fidelity of the archive.
-
-v1.2.0 was committed with git's default end-of-line conversion active, which rewrote
-CRLF to LF for the data files. The archive therefore stored `data/outputs/derived/pairs.csv`
-as 3,084,617 bytes instead of 3,093,348, and the SHA-256 quoted in `README.md` did not
-match the file a user would download. The content was unaffected — the file is identical
-after normalising line endings — but the verification step in the README could not be
-reproduced.
-
-This version adds `.gitattributes` with `* -text`, so git stores files verbatim, and
-re-commits the data files in their original byte form. The checksum in `README.md` now
-matches the archive. No code, data or metadata changed.
+Added `.gitattributes` with `* -text`, so that git stores files verbatim on every platform
+instead of rewriting CRLF to LF on commit. On its own this version did not change the
+already-staged bytes — see 1.2.2.
 
 ## 1.2.0 — 2026-11-23
 
